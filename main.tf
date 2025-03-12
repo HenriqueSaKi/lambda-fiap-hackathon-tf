@@ -1,6 +1,6 @@
 resource "aws_lambda_function" "fiap_lambda_function" {
   filename      = "lambda_email_sender.zip"
-  function_name = "FiapHackathonSendEmail_teste"
+  function_name = "FiapHackathonSendEmail"
   role          = "arn:aws:iam::${var.accountId}:role/LabRole"
   handler       = "index.test"
 
