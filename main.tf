@@ -10,7 +10,8 @@ resource "aws_lambda_function" "fiap_lambda_function" {
 
   environment {
     variables = {
-      Environment = "development"
+      SMTP_USER = "myapp.fiaphackathon.grupo39@gmail.com",
+      SMTP_PASSWORD = ""      
     }
   }
 }
